@@ -2,8 +2,7 @@ Files to look at: printf.c, strings.c, test_strings_printf.c
 
 The purpose of this code is to create a string formatting library. So, this includes a strings library which can concatenate and copy strings and a printf library which supports the %x, %d, %c, %s, %p, %%, %pI format codes. The user inputs to the printf function are assumed to be well-formed.
 
-The most common bugs I ran into with this library were pointer or memory bugs and to debug these I would go into gdb and step through my code to see what was happening. Writing unit tests to account for edge cases and to ensure intended functionality was also how I debugged my code. Since I couldn't print anything out, these were the two methods that were used for debugging.
-
+The most common bugs I ran into with this library were pointer or memory bugs and to debug these I would go into gdb and step through my code to see what was happening. Writing unit tests to account for edge cases and to ensure intended functionality was also how I debugged my code. Since I couldn't print anything out, these were the two methods that were used for debugging. The most interesting presenting bug I had was concerning the double pointer endptr variable in string.c under the function strtonum. My tests appeared to be running completely correctly until I had undefined behavior when I tried using my printf function. After debugging for a while, I discovered that commenting out one test would cause the other tests to fail. This test was under my strtonum unit tests and used the endptr, and so I realized that it must be an issue with how I declared the endptr and, after fixing this, my printf funciton behaved as expected.
 
 Coding the disassembler took a lot of time as I had to read through the ARM intrsuction set manual and learn how load/store, branch, and data processing instructions were encoded.
 
