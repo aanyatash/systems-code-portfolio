@@ -1,4 +1,4 @@
-Files to look at: printf.c, strings.c, test_printf.c
+Files to look at: printf.c, strings.c, test_strings_printf.c
 
 
 My disassembler handles all data processing and branch/branch link instructions. 
