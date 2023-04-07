@@ -13,8 +13,7 @@ void decode_instruction(char* buf, size_t bufsize, unsigned int *addr);
 static int rotate(int immediate, int rot); 
 
 /** Prototypes for internal helpers.
- * Typically these would be qualified as static (private to module)
- * but, in order to call them from the test program, we declare them externally
+ * In order to call them from the test program, declared externally.
  */
 int unsigned_to_base(char *buf, 
                      size_t bufsize, 
@@ -320,13 +319,6 @@ int printf(const char *format, ...)
 	uart_putstring(buf); // Writes to terminal
 	return total;
 }
-
-
-/* The struct insn bitfield is declared using exact same layout as bits are organized in
- * the encoded instruction. Accessing struct.field will extract just the bits
- * apportioned to that field. If you look at the assembly the compiler generates
- * to access a bitfield, you will see it simply masks/shifts for you. Neat!
-*/
 
 static const char *cond[16] = {"eq", "ne", "cs", "cc", "mi", "pl", "vs", "vc",
                                "hi", "ls", "ge", "lt", "gt", "le", "", ""};
