@@ -18,20 +18,6 @@ static formatted_fn_t shell_printf;
 
 static const unsigned int commands_size = 5;
 
-// NOTE TO STUDENTS:
-// Your shell commands output various information and respond to user
-// error with helpful messages. The specific wording and format of
-// these messages would not generally be of great importance, but
-// in order to streamline grading, we ask that you aim to match the
-// output of the reference version.
-//
-// The behavior of the shell commands is documented in "shell_commands.h"
-// https://cs107e.github.io/header#shell_commands
-// The header file gives example output and error messages for all
-// commands of the reference shell. Please match this wording and format.
-//
-// Your graders thank you in advance for taking this care!
-
 // each command_t struct holds name, usage, description, and function ptr
 static const command_t commands[] = {
     {"help", "help [cmd]",  "print command usage and description", cmd_help},
