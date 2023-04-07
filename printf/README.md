@@ -1,3 +1,6 @@
+Files to look at: printf.c, strings.c, test_printf.c
+
+
 My disassembler handles all data processing and branch/branch link instructions. 
 
 For data processing instructions, the disassembler takes into account all of them and for shift
