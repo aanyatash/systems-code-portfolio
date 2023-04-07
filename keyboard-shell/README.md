@@ -1,1 +1,3 @@
-This folder contains the code for a keybaord driver (which uses the ps2 protocol and interrupts) and a shell.
+This folder contains the code for a keyboard driver (which uses the ps2 protocol and interrupts) and a shell. I connected an external keyboard to the Pi for the keyboard driver and to take inputs for the shell.
+
+The main issues I ran into with this code were writing the tokenize function for the parsing the input for the shell. This is because I had to figure out how to allocate a 2D array using malloc. I did some research online for this and used a lot of printf statements to check correct allocation. I also made use of a lot of unit tests for this. To test keyboard, I mostly did manual tests for intended functionality and edge cases.
