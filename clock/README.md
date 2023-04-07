@@ -1,4 +1,7 @@
-Extension - user guide
+
+The clock involved building a breadboard for a clock and then using the Pi to turn the clock on and count upwards. I then added two buttons to allow for the clock time to be adjusted and how this works is defined below. I really enjoyed this assignment as you could see a physical output pn the clock and use this physical output to debug. The unit tests were a helpful way to debug code and ensure proper functionality for the gpio and timer libraries. To work out the register numbers, I used the Broadcom ARM Peripherals Manual.
+
+User guide for two-button interface:
 
 Red button is on the left
 Blue button is on the right.
