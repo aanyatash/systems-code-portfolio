@@ -2,7 +2,7 @@ Files to look at: printf.c, strings.c, test_strings_printf.c
 
 The purpose of this code is to create a string formatting library. So, this includes a strings library which can concatenate and copy strings and a printf library which supports the %x, %d, %c, %s, %p, %%, %pI format codes. The user inputs to the printf function are assumed to be well-formed.
 
-The most common bugs I ran into with this library were pointer or memory bugs and to debug these I would go into gdb and step through my code to see what was happening. Writing unit tests to account for edge cases and to ensure intended functionality was also how I debugged my code. Since, I couldn't print anything out these were the two methods that were used for debugging.
+The most common bugs I ran into with this library were pointer or memory bugs and to debug these I would go into gdb and step through my code to see what was happening. Writing unit tests to account for edge cases and to ensure intended functionality was also how I debugged my code. Since I couldn't print anything out, these were the two methods that were used for debugging.
 
 
 Coding the disassembler took a lot of time as I had to read through the ARM intrsuction set manual and learn how load/store, branch, and data processing instructions were encoded.
