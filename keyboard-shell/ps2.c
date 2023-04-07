@@ -19,15 +19,7 @@ static void handle_ps2(unsigned int pc, void *aux_data);
 // A ps2_device is a structure that stores all of the state and information
 // needed for a PS2 device. The clock field stores the pin number for the
 // clock GPIO pin, and the data field stores the pin number for the data
-// GPIO pin. ps2_new shows examples of how these fields are used.
-//
-// You may extend this structure with additional fields. As
-// it is passed into all ps2_ calls, storing state in this structure is
-// preferable to using global variables: it allows your driver to
-// communicate with more than one concurrent PS2 device (e.g., a keyboard
-// and a mouse).
-//
-// This definition fills out the structure declared in ps2.h.
+// GPIO pin.
 
 struct ps2_device {
     unsigned int clock;
