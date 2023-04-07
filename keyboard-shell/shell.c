@@ -245,16 +245,7 @@ int shell_evaluate(const char *line)
 
 	int i = 0;
 	int j = 0;
-
-	// or you could find beginning and end of word
-	// malloc that amount 
-    // store pointer/pointer in tokens
-
-	// keep iterating until null pointer reached
-
-    // account for leading or trailing white space
-	// don't add the space in between
-
+	
 	// Parses the line until the end is reached
 	while (*line != '\0') {
 	    // Only adds new token to array once end of word is reached, as indicated by a whitespace
